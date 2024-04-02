@@ -1,0 +1,310 @@
+/*MEDIA QUERY*/
+@media screen and (max-width: 827px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .cabeça{
+        display: none;
+       }
+
+    .nave{
+        display: block;
+    }
+
+    .nave .moba-icon{
+        padding-top: 30px;
+        padding-right: 5%;
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+    }
+
+    .menu-moba{
+        position: absolute;
+        display: none;
+        background-color: white;
+        right: 0;
+        padding-bottom: 130%;
+        
+    }
+
+    .menu-moba ul li{
+        list-style: none;
+        margin-left: 15px;
+        padding-bottom: 10px;
+    }
+
+    .abre{
+        display: block;
+    }
+    /*------*/
+
+    .pt_1, .btn_xama{
+        margin-top: -30px;
+    }
+
+    .parceria h5{
+        margin-top: 130px;
+    }
+
+      /*Contatos*/
+      .ctt{
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .ctt .nome{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .contatos h1{
+        padding-bottom: 10%;
+    }
+
+    .contatos h3{
+        font-weight: 600;
+    }
+
+    .contatos p{
+        font-size: 20px;
+    }
+
+      /*Produtos*/
+      .top h1{
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .imgg{
+        width: auto;
+        height: auto;
+        margin-left: -30%;
+    }
+
+    .imgemdiv{
+        margin-top: 30px;
+        width: auto;
+        height: auto;
+    }
+
+    .txtdiv p{
+        display: flex;
+        position: absolute;
+        text-align: right;
+        width: 100%;
+        justify-content: end;
+        margin-top: -420px;
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    .pt_1 button{
+        margin-right: -14%;
+    }
+
+    /*SOBRE*/
+
+    .sobre{
+        padding-top: 30%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 0;
+    }
+
+    .sobre h2{
+        font-size: 25px;
+    }
+
+    /*APRESENTAÇÃO*/
+    .presents{
+        flex-direction: column;
+        
+    }
+
+    .presents p{
+        margin-left: 5%;
+        padding-right: 8%;
+        text-align: justify;
+    }
+
+    .presents h5{
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+
+    .presents h4{
+        margin-left: 4%;
+        margin-bottom: 2%;
+    }
+
+    .presents button{
+        text-align: center;
+        margin-left: 27%;
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+
+    .pre-img{
+        width: auto;
+        height: auto;
+        margin-bottom: 7%;
+    }
+
+    .pre-img img{
+        margin-left: -15.5%;
+        width: 130%;
+        height: 130%;
+    }
+
+    /*PARCERIAS*/
+
+    .parceria{
+       flex-direction: column;
+    }
+
+    .parceria .par_txt{
+        margin-top: 108%;
+    }
+
+    .parceria p{
+   
+        margin-left: 5%;
+        padding-right: 8%;
+        text-align: justify;
+    }
+
+    .parceria h5{
+        margin-top: 100%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+
+    .parceria btn2{
+        margin-top: 500px;
+    }
+
+    .par-img img{
+        margin-left: -15.5%;
+        padding: 110px 0;
+        width: 130%;
+        height: auto;
+    }
+
+    /*SERVIÇOS*/
+    .servico2{
+        margin-top: 30%;
+        font-size: 34px;
+        margin-bottom: 0;
+    }
+
+    /*PRODUTOS*/
+    .produtos h1{
+        font-size: 30px;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+    .linha{
+        width: 25%;
+        margin-left: 65%;
+        margin-top: -50px;
+    }
+
+    .btn-pro{
+        font-size: 25px;
+        padding: 0, 10%;
+    }
+
+    /*CONTATO*/
+    .lin2{
+        margin-top: 0px;
+        margin:0, 1px, 0, 3%;
+    }
+
+    .contatos{
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .ctt{
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .ctt .nome{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .contatos h1{
+        padding-bottom: 10%;
+    }
+
+    .contatos h3{
+        font-weight: 600;
+    }
+
+    .contatos p{
+        font-size: 20px;
+    }
+}
+    
+
+@media screen and (max-width:640px){
+/*MAX-WIDTH = TELA MENOR QUE TAL COISA*/
+       /*CABEÇALHO*/
+
+   .presents .btn2{
+        text-align: center;
+        margin-left: 27%;
+        margin-top: 50px;
+   }
+
+   .parceria h5{
+        margin-bottom: 2%;
+    }
+
+    /*Produtos*/
+    .top h1{
+        margin-left: 1%;
+    }
+       
+    /*Contatos*/
+    .ctt{
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .ctt .nome{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .contatos h1{
+        padding-bottom: 10%;
+    }
+
+    .contatos h3{
+        font-weight: 600;
+    }
+
+    .contatos p{
+        font-size: 20px;
+    }
+}/*Gertrude*/
+
+
+
+
+
+
