@@ -88,14 +88,6 @@
         overflow-x: hidden;
     }
 
-    .nave{
-        display: block;
-        padding: 0px;
-        padding-bottom: 7px;
-        padding-top: 7px;
-        width: 50%;
-    }
-    
     .imgg{
         width: auto;
         height: auto;
@@ -281,14 +273,6 @@
         overflow-x: hidden;
     }
 
-    .nave{
-        display: block;
-        padding: 0px;
-        padding-bottom: 7px;
-        padding-top: 7px;
-        width: 50%;
-    }
-    
    .presents .btn2{
         text-align: center;
         margin-left: 27%;
