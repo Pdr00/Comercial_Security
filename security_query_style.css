@@ -80,6 +80,10 @@
 }
 
 @media screen and (max-width: 460px){
+      body{
+        overflow-x: hidden;
+    }
+    
     .imgg{
         width: auto;
         height: auto;
@@ -261,7 +265,10 @@
 @media screen and (max-width:640px){
 /*MAX-WIDTH = TELA MENOR QUE TAL COISA*/
        /*CABEÇALHO*/
-
+      body{
+        overflow-x: hidden;
+    }
+    
    .presents .btn2{
         text-align: center;
         margin-left: 27%;
