@@ -10,6 +10,9 @@
 
     .nave{
         display: block;
+        padding: 0px;
+        padding-bottom: 7px;
+        padding-top: 7px;
     }
 
     .nave .moba-icon{
