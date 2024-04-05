@@ -1,548 +1,348 @@
-/*É COISA NOVA, PO*/
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+/*MEDIA QUERY NOVO*/
+@media screen and (max-width: 827px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .cabeça{
+        display: none;
+       }
+
+    .nave{
+        display: block;
+    }
+
+    .nave .moba-icon{
+        padding-top: 30px;
+        padding-right: 5%;
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+    }
+
+    .menu-moba{
+        position: absolute;
+        display: none;
+        background-color: white;
+        right: 0;
+        padding-bottom: 130%;
+        
+    }
+
+    .menu-moba ul li{
+        list-style: none;
+        margin-left: 15px;
+        padding-bottom: 10px;
+    }
+
+    .abre{
+        display: block;
+    }
+    /*------*/
+
+    .pt_1, .btn_xama{
+        margin-top: -30px;
+    }
+
+    .parceria h5{
+        margin-top: 130px;
+    }
+
+      /*Contatos*/
+      .ctt{
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .ctt .nome{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .contatos h1{
+        padding-bottom: 10%;
+    }
+
+    .contatos h3{
+        font-weight: 600;
+    }
+
+    .contatos p{
+        font-size: 20px;
+    }
+
+      /*Produtos*/
+      .top h1{
+        margin-left: 1%;
+    }
 }
 
-html{
-    scroll-behavior: smooth;
-}
+@media screen and (max-width: 460px){
+    .imgg{
+        width: auto;
+        height: auto;
+        margin-left: -30%;
+    }
 
-body{
-    margin: 0;
-    border:0;
-    padding: 0;
-    display: block;
-    font-family: "Outfit", sans-serif;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+    .imgemdiv{
+        margin-top: 30px;
+        width: auto;
+        height: auto;
+    }
 
-a{
-    text-decoration: none;
-}
-
-/*CABEÇALHO*/
-.icone{
-    border-radius: 50%;
-}
-
-.parte1{
-    height: auto;
-}
-
-.nave{
-    display: none;
-    list-style: none;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: rgba(128, 128, 128, 0.295);
-    padding: 7px;
-    z-index: 1;
-}
-
-.nave li{
-    list-style: none;
-    padding-top: 10px;
-}
-
-.menu-moba a{
-    padding-top: 40px;
-}
-
-.menu-moba li, a{
-    list-style: none;
-    color: #4E5152;
-    padding-right: 20px;
-    margin-right: 15px;
-    font-weight: 700;
-    right: 250px;
-
-}
-
-#fafa{
-    margin-right: -14px;
-}
-
-.moba-icon{
-    margin-left: 90%;
-    width: 5px;
-}
-/*------*/
-.cabeça{
-    position: fixed;
-    width: 100%;
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: rgba(128, 128, 128, 0.295);
-    padding: 20px;
-    background-color: white;
-    z-index: 1;
-}
-
-.cabeça a{
-    position: relative;
-    color: #4E5152;
-}
-
-.cabeça li{
-    position: relative;
-    list-style: none;
-    display: inline;
-   /* padding-right: 20px;
-    margin-right: 15px;*/
-    justify-content: space-between;
-    font-weight: 700;
-    left: 250px;
-}
-
-.cabeça ul{
-    text-align: right;
-    margin: 0;
-    margin-right: 20px;
-}
-
-/*IMAGEM 1*/
-
-.txtdiv p{
-    display: flex;
-    position: absolute;
-    text-align: right;
-    margin-left: -1%;
-    width: 100%;
-    justify-content: end;
-    margin-top: -630px;
-    color: white;
-    font-size: 60px;
-    font-weight: 300;
-}
-
-.imgemdiv{
-    top:20px;
-    width: 100%;
-    height: 715px;
-    overflow: hidden;
-}
-
-.imgg{
-    position: relative;
-    width: 100%;
-    height: 750px;
-    clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
-    top:0.1px;
-}
-
-/*NOME E BOTÃO 1*/
-
-.pt_1 .nomeImpresa{
-    position: relative;
-    font-weight: 700;
-    top:70px;
-    font-size: 26px;
-    color: #4E5152;/*cinza escuro*/
-    padding-left: 30px;
-    margin-bottom: -40px;
-}
-
-.pt_1 button{
-    position: absolute;
-    top: 80px;
-    right:77px;
-    height:45px;
-    width: 170px;
-    text-decoration:underline;
-    background-color: transparent;
-    color: #A7ADAF;/*cinza claro*/
-    font-size: 13.5px;
-    font-weight: 600;
-    border: solid;
-    border-width: 1.5px;
-    border-color:#A7ADAF;
-    cursor: pointer;
-    justify-self: center;
-}
-
-/*SOBRE*/
-.sobre{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    text-align: center;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top:220px ;
-    padding-bottom: 170px;
-
-}
-
-.sobre h2{
-    font-size: 30px;
-    color: #4E5152;
-}
-
-.sobre h5{
-    font-size: 18px;
-    color: #4E5152;
-    margin-bottom: 20px;
-}
-
-/*APRESENTAÇÃO*/
-
-.presents{
-    padding-top: 30px;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    height: 540px;
-    align-items: center;
-}
-
-.pre-img{
-    height: 375px;
-    align-items: center;
-   /* background-color: blue;*/
-    width: 409px;
-    position: absolute;
-    overflow: hidden;
-    margin-left: 0.5%;
-}
-
-.presents img{
-   /* clip-path: polygon(14% 0, 87% 0, 87% 100%, 14% 100%);
-    margin-left: -5%;
-    margin-bottom: 20%;
-    width: 50%;
-    position: relative;*/
-   
-    clip-path: polygon(14% 0, 87% 0, 87% 100%, 14% 100%);
-    position: inherit;
-    margin-left: -78px;
-    width: 137%;
-    height: 100%;
-}
-
-.pre-txt{
-    margin-top: 50px;
-    /*background-color: blue;*/
-    margin-left: 500px;
-}
-
-.presents h4{
-    margin-left: 40px;
-    margin-bottom: 30px;
-    margin-top: 100px;
-    color: #4E5152;
-}
-
-.presents h5{
-   
-    font-weight: 700;
-    font-size: 26px;
-  /*  margin-top: 90px;*/
-    color: #4E5152;
-}
-
-.presents p{
-
-    padding-right: 80px;
-    font-size: 18px;
-    color: #4E5152;
-    font-weight: 300;
-}
-
-.presents button{
-    margin-top: 78px;
-    margin-left: 30%;
-
-    height:45px;
-    width: 170px;
-    text-decoration:underline;
-    background-color: transparent;
-    color: #A7ADAF;/*cinza claro*/
-    font-size: 13.5px;
-    font-weight: 600;
-    border: solid;
-    border-width: 1.5px;
-    border-color:#A7ADAF;
-    cursor: pointer;
-}
-
-/*PARCERIA*/
-
-.parceria{
-    padding-top: 10px;
-    height: 540px;
-    align-items: center;
-    width: 100%;
-    margin-top: px;
-    padding-top: 170px;
-    padding-bottom: 16px;
-}
-
-.par-img{
-    height: 375px;
-    align-items: center;
-    background-color: blue;
-    width: 409px;
-    position: absolute;
-    overflow: hidden;
-    margin-left: 0.5%;
-}
-
-
-.parceria img{
-    /*clip-path: polygon(14% 0, 87% 0, 87% 100%, 14% 100%);
-    width: 50%;
-    margin-left: -5%;
-    position: relative;*/
-
-    clip-path: polygon(14% 0, 90% 0, 90% 100%, 14% 100%);
-    position: inherit;
-    margin-left: -90px;
-    height: 130%;
-    width: 150%;
-}
-
-.parceria h5{
-   
-    font-weight: 700;
-    font-size: 26px;
-    margin-top: 160px;
-    color: #4E5152;
-}
-
-.parceria .par_txt{
-
-    margin-top: -120px;
-    /*background-color: blue;*/
-    margin-left: 500px;
-}
-
-.parceria p{
+    .txtdiv p{
+        display: flex;
+        position: absolute;
+        text-align: right;
+        width: 100%;
+        justify-content: end;
+        margin-top: -420px;
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+    }
     
-    padding-right: 80px;
-    font-size: 18px;
-    padding-bottom: 250px;
-    color: #4E5152;
-    font-weight: 300;
+    .pt_1 button{
+        margin-right: -14%;
+    }
+
+    /*SOBRE*/
+
+    .sobre{
+        padding-top: 30%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 0;
+    }
+
+    .sobre h2{
+        font-size: 25px;
+    }
+
+    /*APRESENTAÇÃO*/
+    .presents{
+        flex-direction: column;
+        
+    }
+
+    .presents p{
+        margin-left: 1.5%;
+        padding-right: 2%;
+        text-align: justify;
+    }
+
+    .presents h5{
+        margin-left: 1.5%;
+        margin-bottom: 2%;
+    }
+
+    .presents h4{
+        margin-left: 3%;
+        margin-bottom: 2%;
+        margin-top: 20px;
+    }
+
+    .pre-txt .btn2{
+        margin-top: 10%;
+        position: absolute;
+        margin-left: 25%;
+        /*margin-left: 27%;
+        margin-top: 50px;
+        margin-bottom: 200px;*/
+    }
+
+    .pre-txt{
+        width: 95%;
+        height: 50%;
+        margin-left: 0;
+        margin-top: 100%;
+        overflow: hidden;
+        padding-left: 3%;
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    .pre-img{
+        width: 95%;
+        height: 50%;
+        margin-left: 0;
+        overflow: hidden;
+        padding-left: 3%;
+        padding-right: 0;
+        text-align: justify;
+
+       /* width: auto;
+        height: auto;
+        margin-bottom: 7%;*/
+    }
+
+    .pre-img img{
+       /* margin-left:0;
+        width: 130%;
+        height: 130%;*/
+    }
+
+    /*PARCERIAS*/
+
+    .parceria{
+       flex-direction: column;
+    }
+
+    .parceria .par_txt{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 110%;
+        padding-left: 5%;
+        padding-right: 0;
+        text-align: justify;
+        /*margin-top: 108%;*/
+    }
+
+    .parceria p{
+        padding-right: 10%;
+       /* margin-left: 5%;
+        padding-right: 8%;
+        text-align: justify;*/
+    }
+
+    .parceria h5{
+       /* margin-top: 100%;
+        margin-left: 5%;
+        margin-bottom: 2%;*/
+    }
+
+    .parceria btn2{
+       /* margin-top: 500px;*/
+    }
+
+
+    .par-img{
+        margin-top: 10%;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    .par-img img{
+        width: 900px;
+        margin-left: -200px;
+
+      /*  margin-left: -15.5%;
+        padding: 110px 0;
+        width: 130%;
+        height: auto;*/
+    }
+
+    /*SERVIÇOS*/
+    .servico2{
+        margin-top: 20%;
+        font-size: 34px;
+        margin-bottom: 5%;
+    }
+
+    /*PRODUTOS*/
+    .produtos h1{
+        font-size: 30px;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+    .imagens-produtos{
+        gap: 20px;
+    }
+
+    .linha{
+        width: 25%;
+        margin-left: 65%;
+        margin-top: -50px;
+    }
+
+    .btn-pro{
+        font-size: 25px;
+        padding: 0, 10%;
+    }
+
+    /*CONTATO*/
+    .lin2{
+        margin-top: 0px;
+        margin:0, 1px, 0, 3%;
+    }
+
+    .contatos{
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .ctt{
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .ctt .nome{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .contatos h1{
+        padding-bottom: 10%;
+    }
+
+    .contatos h3{
+        font-weight: 600;
+    }
+
+    .contatos p{
+        font-size: 20px;
+    }
 }
+    
 
-/*SERVIÇOS*/
+@media screen and (max-width:640px){
+/*MAX-WIDTH = TELA MENOR QUE TAL COISA*/
+       /*CABEÇALHO*/
 
-.servico2{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding-top: 80px;
-}
+   .presents .btn2{
+        text-align: center;
+       
+   }
 
-.service{
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
+   .parceria h5{
+        margin-bottom: 2%;
+    }
 
-.card{
-    transition: 0.3s;
-}
+    /*Produtos*/
+    .top h1{
+        margin-left: 1%;
+    }
+       
+    /*Contatos*/
+    .ctt{
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
 
-.card, .uno{
-    background-image: url(https://media-public.canva.com/BxmAA/MAFDxoBxmAA/1/tl.jpg);
-    background-position: -170px;
-    background-size:230%;
-    width: 300px;
-    height: 460px;
-    margin: 20px;
-}
+    .ctt .nome{
+        width: auto;
+        margin-right: 0;
+    }
 
-.dos{
-    background-image: url(https://media-public.canva.com/89clM/MAElhx89clM/1/tl.jpg);
-    background-position: -250px;
-    background-size: 230%;
-}
+    .contatos h1{
+        padding-bottom: 10%;
+    }
 
-.tre{
-    background-image: url(https://media.canva.com/1/image-resize/1/800_634_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9OMVhqSS9NQUdBRFNOMVhqSS8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAABoRI5kByFwmGT56SuOefQvx_3z7_Kl5_Po5k1l3Bdz&exp=1711131350&x-canva-quality=screen&csig=AAAAAAAAAAAAAAAAAAAAADpmLTyLJ9q_jmMGMd7lSm3CtTkaRu3U1UwJmZc4g4o-);
+    .contatos h3{
+        font-weight: 600;
+    }
 
-    background-position: -280px;
-    background-size:200%;
-}
-
-.text{
-    position:absolute;
-    background-color: white;
-    padding: 15px;
-    width: 250px;
-    margin-top: 345px;
-    margin-left: 10px;
-}
-
-.text p{
-    padding-left: 30px;
-    padding-bottom: 8px;
-    font-size: 15px;
-    color: #4E5152;
-}
-
-.text h2{
-    padding-top: -10px;
-    color: #A7ADAF;
-    font-weight: 500;
-}
-
-/*PRODUTOS*/
-.produtos{
-    padding-top: 20px;
-}
-
-.produtos h1{
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-weight: 800;
-}
-
-.imagens-produtos{
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagens-produtos img{
-    border: solid;
-    border-width: 0.5px;
-    border-color:#A7ADAF;
-}
-
-.imgs-txt{
-    transition: 0,3s;
-}
-
-.imgs-txt h4{
-    text-align: center;
-    color: #4E5152;
-}
-
-.btn-pro{
-    margin: 5px 0 20px 0;
-    text-align: center;
-    padding: 10px;
-    text-decoration: underline;
-    font-size: 40px;
-    font-weight: 700;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.oxi{
-    border: solid;
-    border-width: 0.5px;
-    border-color: #A7ADAF;
-}
-
-.linha{
-    position: absolute;
-    margin-left: 40%;
-    margin-right: 40%;
-    border: solid;
-    border-width: 2px;
-    width: 52%;
-    justify-content: end;
-    margin-top: -62px;
-    display: flex;
-    text-align: right;
-}
-
-.lin2{
-    position: absolute;
-    border: solid;
-    border-width: 2px;
-    height: 0px;
-    width: 89%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 75px;
-    margin-bottom: 30px;
-}
-
-.top h1{
-    font-size: 50px;
-    margin-left: 90px;
-    margin-bottom: 30px;
-    margin-right: 60%;
-}
-
-/*CONTATOS*/
-
-.contatos{
-    margin-top: 100px;
-    margin-left: 80px;
-    color: #4E5152;
-}
-
-.contatos .nome{
-    margin-top: 40px;
-}
-
-.contatos h1{
-    font-size: 35px;
-    margin-top: 30px;
-}
-
-.ctt{
-    margin-bottom: 50px;
-    margin-top: -60px;
-    margin-right: 20%;
-    margin-left: 45%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 20%;
-    margin-right:20%;
-    width: 35%;
-}
-
-.ctt h3{
-    font-size: 20px;
-    font-weight: 800;
-    padding: 20px 0;
-    margin-right: 20%;
-}
-
-.ctt p{
-    font-size: 24px;
-    color: #4E5152;
-    margin-right: 20%;
-}
-
-/*ANIMAÇÃO DOS CRADS*/
-
-.card:hover {
-    transform: scale3d(1.1, 1.1, 1);
-}
-
-.imgs-txt:hover{
-    transform: scale3d(1.1, 1.1, 1);
-}
-
-.cabeça a::after{
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color: #4E5152;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}
-
-.cabeça a:hover::after{
-    width: 100%;
-}
-
-
+    .contatos p{
+        font-size: 20px;
+    }
+}/*Gertrude*/
 
