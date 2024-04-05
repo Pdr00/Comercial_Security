@@ -1,4 +1,5 @@
-/*MEDIA QUERY NOVO.1*/
+
+/*MEDIA QUERY NOVO.2*/
 @media screen and (max-width: 827px){
     body{
         overflow-x: hidden;
@@ -190,22 +191,23 @@
 
     .parceria{
        flex-direction: column;
-       width: 90%;
+       width: 10%;
     }
 
     .parceria .par_txt{
-        width: 110%;
-        margin-left: 0;
-        margin-top: 125%;
-        padding-left: 5%;
-        padding-right: 0;
+       /* width: 110%;*/
+        margin-left: 10px;
+        margin-top: 77%;
+      /*  padding-left: 5%;
+        padding-right: 0;*/
         text-align: justify;
         /*margin-top: 108%;*/
+        position: absolute;
     }
 
     .parceria p{
         padding-right: 0%;
-        width: 92%;
+        width: 96%;
        /* margin-left: 5%;
         padding-right: 8%;
         text-align: justify;*/
