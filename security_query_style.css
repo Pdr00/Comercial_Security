@@ -1,4 +1,4 @@
-/*MEDIA QUERY NOVO*/
+/*MEDIA QUERY NOVO.1*/
 @media screen and (max-width: 827px){
     body{
         overflow-x: hidden;
@@ -190,12 +190,13 @@
 
     .parceria{
        flex-direction: column;
+       width: 90%;
     }
 
     .parceria .par_txt{
-        width: 100%;
+        width: 110%;
         margin-left: 0;
-        margin-top: 110%;
+        margin-top: 125%;
         padding-left: 5%;
         padding-right: 0;
         text-align: justify;
@@ -203,7 +204,8 @@
     }
 
     .parceria p{
-        padding-right: 10%;
+        padding-right: 0%;
+        width: 92%;
        /* margin-left: 5%;
         padding-right: 8%;
         text-align: justify;*/
@@ -345,4 +347,3 @@
         font-size: 20px;
     }
 }/*Gertrude*/
-
