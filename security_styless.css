@@ -1,5 +1,5 @@
 
-/*CSS NOVO.2*/
+/*CSS NOVO.3*/
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +38,7 @@ a{
     list-style: none;
     position: fixed;
     width: 100%;
+    height: 53px;
     background-color: white;
     border-bottom: solid;
     border-width: 1px;
@@ -66,12 +67,24 @@ a{
 }
 
 #fafa{
-    margin-right: -14px;
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 100%;
+    margin-right: -86%;
+    width: 100%;
+    height: 75%;
+    margin-top: -30px;
+    position: absolute;
+  /*  background-color: rgba(0, 128, 0, 0.555);*/
 }
 
 .moba-icon{
+  /*  background-color: blue;*/
+    position: relative;
+    margin-top: 25px;
     margin-left: 90%;
     width: 5px;
+    height: 0.001px;
 }
 /*------*/
 .cabeça{
@@ -368,7 +381,7 @@ a{
 }
 
 .tre{
-    background-image: url(https://media.canva.com/1/image-resize/1/800_634_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9OMVhqSS9NQUdBRFNOMVhqSS8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAACNSDmnFpV-z3M4jvLC_Gfs4uT3nlCOcb_FAmNO-7mNu&exp=1712369750&x-canva-quality=screen&csig=AAAAAAAAAAAAAAAAAAAAAOa9qhW28QWlDC5h5dKnGC6wzIGRt_WiVB_7RENeizO3);
+    background-image: url(https://media.canva.com/1/image-resize/1/800_634_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9OMVhqSS9NQUdBRFNOMVhqSS8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAABoRI5kByFwmGT56SuOefQvx_3z7_Kl5_Po5k1l3Bdz&exp=1711131350&x-canva-quality=screen&csig=AAAAAAAAAAAAAAAAAAAAADpmLTyLJ9q_jmMGMd7lSm3CtTkaRu3U1UwJmZc4g4o-);
 
     background-position: -280px;
     background-size:200%;
