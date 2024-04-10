@@ -169,7 +169,7 @@
 
     .pre-img{
         width: 95%;
-        height: 50%;
+        /*height: 50%;*/
         margin-left: 0;
         overflow: hidden;
         padding-left: 3%;
